@@ -2,7 +2,8 @@
 require 'open-uri'
 require 'digest/md5'
 
-regex = /http:\/\/\d+.media.tumblr.com\/tumblr_(.*).(jpg|png)/
+regex = /http:\/\/\d+\.media\.tumblr\.com\/tumblr_[^"]*.(jpg|png)/
+# regex = /http:\/\/\d+.media.tumblr.com\/tumblr_(.*).(jpg|png)/
 num = 1
 count = 1
 max = 9000
